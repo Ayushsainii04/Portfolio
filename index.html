@@ -76,10 +76,10 @@ var tabcontents1 = document.getElementsByClassName("tab-contents1");
 
 function opentab(tabname) {
     
-    for (var tablink of tablinks1) {
+    for (tablink of tablinks1) {
         tablink.classList.remove("active-link1");
     }
-    for (var tabcontent of tabcontents1) {
+    for (tabcontent of tabcontents1) {
         tabcontent.classList.remove("active-tab1");
     }
     event.currentTarget.classList.add("active-link1");
