@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="main.js">
-     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
     
 </head>
 
@@ -70,8 +69,22 @@
             </div>
         </div>
     </div>
-   <script src="main.js">
+   <script>
+   
+   var tablinks1 = document.getElementsByClassName("tab-links1");
+var tabcontents1 = document.getElementsByClassName("tab-contents1");
 
+function opentab(tabname) {
+    
+    for (var tablink of tablinks1) {
+        tablink.classList.remove("active-link1");
+    }
+    for (var tabcontent of tabcontents1) {
+        tabcontent.classList.remove("active-tab1");
+    }
+    event.currentTarget.classList.add("active-link1");
+    document.getElementById(tabname).classList.add("active-tab1");
+}
    </script>
 </body>
 
