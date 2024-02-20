@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.js">
+    
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/logo.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hi, I'm <span>Ayush</span><br>Saini From India</h1>
+            </div>
+        </div>
+    </div>
+    <!---------------about--------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/user2.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="Sub-title">About Me</h1>
+                    <p>I am a skilled Full Stack Developer known for their proficiency in both front-end and back-end technologies. With expertise in languages such as JavaScript, HTML, CSS, and frameworks like React.js and Node.js, they excel in creating
+                        dynamic and responsive web applications. I am adept at designing user interfaces, building APIs, and managing databases, ensuring seamless functionality and optimal performance. Their collaborative nature and commitment to staying
+                        updated on industry trends make them an invaluable asset to any development team.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links1 active-link1" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links1" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links1" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents1 active-tab1" id="skills">
+                        <ul>
+                            <li><span>Software Development</span><br>Developing Software</li>
+                            <li><span>Web Development</span><br>Website development</li>
+                            <li><span>App Development</span><br>Building Android/IOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents1" id="experience">
+                        <ul>
+                            <li><span>Jun'23 - July'23</span><br>Library Management Intern</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents1" id="education">
+                        <ul>
+                            <li><span>Sep'22 - July'26</span><br>B.tech from MRIIRS</li>
+                            <li><span>March'22</span><br>High Schooling from Chinar Public School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+</body>
+
+</html>
