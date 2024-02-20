@@ -7,6 +7,6 @@ var tablinks1 = document.getElementsByClassName("tab-links1");
             for(tabcontents of tabcontents1){
                 tabcontents.classlist.remove("active-tab1");
             }
-            event.currentTarget.classlist.add("active-link1");
+            Event.currentTarget.classlist.add("active-link1");
             document.getElementById(tabname).classList.add("active-tab1");
         }
